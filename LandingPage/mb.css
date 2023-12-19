@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Luckiest+Guy&family=Rubik+Bubbles&family=Bebas+Neue&family=Luckiest+Guy&family=Alegreya+SC&display=swap");
+:root {
+  --s: 25px;
+  --primary-color: brown;
+  --secondary-color: #fc3f00;
+  --tertiary-color: #ffe600;
+  --darker-primary: rgb(89, 53, 53);
+  --primar-color-2: #fff;
+  --primary-colo-3: #fafafa;
+  --font-alegreya: Alegreya SC;
+  --font-rubik: Rubik Bubbles;
+  --font-castro: Castro Titling;
+  --font-lucky-g: Luckiest Guy;
+}
+@media screen and (max-width: 540px) {
+  nav {
+    position: absolute;
+    width: 70%;
+    background-color: rgba(57, 23, 23, 0.697);
+    backdrop-filter: blur(5px);
+    height: 100svh;
+    top: 0;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+  .logo {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  body img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #nav-close {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+  #menu-icon {
+    width: 30px;
+    height: 30px;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 4.5rem;
+  }
+  nav > ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 2rem;
+    background-color: rgb(64, 30, 30);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #00000053;
+  }
+  nav > ul > li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  .nav-icon-container {
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+  }
+  .hero-section {
+    height: 100svh;
+    padding: 0;
+    position: relative;
+  }
+  .hero-section img {
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .hero-headline {
+    height: max-content;
+  }
+  .hero-headline h1 {
+    font-size: 2rem;
+    padding: 0 10%;
+    margin-top: 10%;
+    height: fit-content;
+  }
+  .hero-headline h2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10%;
+  }
+  .h-2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+  }
+  .cup-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    min-height: 120px;
+    min-width: 120px;
+  }
+  #cup-image {
+    max-height: 180px;
+    max-width: 180px;
+    object-fit: contain;
+    z-index: 3 !important;
+  }
+  @media (max-width: 410px) {
+    #cup-image {
+      max-height: 130px;
+      max-width: 130px;
+      object-fit: contain;
+      z-index: 3 !important;
+    }
+    .h-2 {
+      flex-direction: row;
+      margin-top: 0;
+      padding-top: 0;
+      align-items: flex-start;
+    }
+    .cup-container {
+      margin-top: 0;
+    }
+    .hero-section-cta {
+      position: relative;
+    }
+  }
+  .hero-section-cta {
+    position: absolute;
+    bottom: 0;
+    color: var(--primar-color-2);
+    padding: 0 10%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .hero-section-cta p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .hero-section-cta #cta-btn {
+    height: 2.5em;
+    width: 12em;
+    font-size: 12px;
+    margin-top: 10px;
+    border: none;
+    color: var(--primar-color-2);
+    background-color: var(--darker-primary);
+    border-radius: 5px;
+  }
+  .hero-content {
+    padding: 10px;
+    background-image: url(./images/community.jpg);
+    background-size: cover;
+  }
+  .hero-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 12, 12, 0.724);
+    backdrop-filter: blur(8px);
+    margin-bottom: 10px;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  .hero-content > :nth-child(1) {
+    text-align: center;
+    font-size: 12px
+  }
+  .hero-content h3 {
+    color: #fc3f00;
+  }
+  .hero-content > :nth-child(1) h3 {
+    padding-bottom: 40px;
+  }
+  .hero-content > :nth-child(1) p {
+    color: var(--primar-color-2);
+    line-height: 2em;
+    font-size: 12px
+  }
+  .hero-content > :nth-child(2) {
+    color: var(--primar-color-2);
+    line-height: 2em;
+    min-height: 300px;
+    height: max-content;
+    padding: 40px 20px;
+  }
+  .hero-content > :nth-child(2) ul {
+    list-style: none;
+  }
+  .hero-content > :nth-child(2) ul > li {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content > :nth-child(2) ul > li b {
+    font-family: var(--font-lucky-g);
+    color: #fc3f00;
+    font-size: 1.3em;
+  }
+  .about-section {
+    padding: 25px;
+  }
+  .menu-section {
+    padding: 0 5%;
+    padding-bottom: 5px;
+    margin-top:5%;
+    margin-bottom: 5%;
+  }
+
+  .menu-section-cta p{
+    font-size: 12px;
+  }
+
+  .gallery-section > h3,
+  h4,.join-us-gallery > h3 {
+    color: var(--darker-primary);
+    text-align: center;
+    font-family: var(--font-alegreya);
+  }
+  .gallery-section p {
+    text-align: center;
+    font-family: var(--font-castro);
+    padding: 5px;
+  }
+  .gallery-section-card {
+    margin: 15px 0;
+  }
+  .card-images {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  .card-images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .card-buttons {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+  .card-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0000003e;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primar-color-2);
+    text-align: center;
+    padding-top: 2px;
+    backdrop-filter: blur(5px);
+  }
+  .testimonial-section h3{
+    font-size: 14px;
+  }
+  footer{
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .testimonial-section-content-item {
+    width: 100%;
+  }
+  .footer-info-item {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  footer h3 {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
