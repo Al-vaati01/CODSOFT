@@ -79,6 +79,8 @@ nav > ul > li{
 nav > ul > li a{
   font-family: var(--font-alegreya);
   font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 .nav-icon-container {
   position: relative;
@@ -348,7 +350,7 @@ nav > ul > li a {
 }
 .hero-section-cta #cta-btn {
   height: 2.5em;
-  width: 200px;
+  width: 300px;
   margin-top: 10px;
   border: none;
   color: var(--primar-color-2);
