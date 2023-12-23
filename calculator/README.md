@@ -23,3 +23,11 @@ Welcome to the Calculator project! This application is designed to perform basic
 - User Interface: Simple and intuitive interface for easy interaction.
 
 ![image of the calculator](./image/calc-image.png)
+
+### AUTHOR
+Alvin Vaati
+
+Follow Me on:
+
+[X](https://www.x.com/alvin_ke) ,
+[github](htttps://www.github.com/Al-vaati01)
